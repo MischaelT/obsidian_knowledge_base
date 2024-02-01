@@ -1,0 +1,39 @@
+- area plot
+	- used to represent cumulated totals, using numbers or percentages over time
+	- Stacked by default
+		 ![[img/Pasted image 20230427213512.png]]
+- histograms
+	-   a way of representing the frequency distribution of a variable
+	- use np.histogram to align the bins with horisontal line  
+		![[img/Pasted image 20230427213852.png]]
+- bar Charts
+	- Used to compare the values of a variable at a given point in time
+	- ![[img/Pasted image 20230427214401.png]]
+- pie chart
+		-  illustrate numerical proportions
+		- ![[img/Pasted image 20230427215059.png]]
+- box plot
+		- ![[img/Pasted image 20230427215207.png]]
+		- Represent the statistical rdistribution of the data
+		- Use 5 dimensions:
+			- minimun: smallest data. First quartile - 1.5IQR
+			- first quartile: 25% of the data are less than this
+			- median
+			- third quartile: 75% are bigger than this
+			- maximum: third + 1.5IQR
+			- outliers (not dimension)
+ - scatter plot
+		-  displayes variables pertaining to typically two vars against each other. 
+		- Usually the dependent in front of the independent. This allows to determine if there is any correlation between two variables
+		- ![[img/Pasted image 20230427220009.png]]
+- Waff;le chart 
+		- Created to display progress towards goals
+		- ![[img/Pasted image 20230427221007.png]]
+		- matplotlib cannot make such chart
+- Word cloud:
+		- depiction of different words in some textual data
+		- The more frequent the word appear in the text the more it appears in the cloud
+		- ![[img/Pasted image 20230427221207.png]]
+		- matplotlib cannot generate it
+- regression plot
+		- ![[img/Pasted image 20230427221402.png]]

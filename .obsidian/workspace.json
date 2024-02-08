@@ -1,0 +1,166 @@
+{
+  "main": {
+    "id": "65e71c076cb00e5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "fbd9a9d39d9471d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bd361f0be38c005a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "data_science/development/pyTorch/ArgMax.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e4508e5a3d449274",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed6ad1073b9bb60e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "229bcfdf9ff250a6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d316344958b7b8d5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "430a6c2f7f2c49ed",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6f593bc49e02f681",
+    "type": "split",
+    "children": [
+      {
+        "id": "a424b2268265e5bd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ebeb9194bb1e6627",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "data_science/development/pyTorch/ArgMax.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1df8f01b845e6af7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "data_science/development/pyTorch/ArgMax.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c57419dbd7006d54",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "04a4f068800e60da",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "data_science/development/pyTorch/ArgMax.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "bd361f0be38c005a",
+  "lastOpenFiles": [
+    "data_science/development/pyTorch/modules/Module optim.md",
+    "data_science/development/pyTorch/modules/Module nn.md",
+    "data_science/courses/Generative AI with Large Language Models/2_Fine-tuning and evaluating large language models.md",
+    "Pasted image 20240208130505.png",
+    "Pasted image 20240208125443.png",
+    "Pasted image 20240208124853.png",
+    "Pasted image 20240208120639.png",
+    "Pasted image 20240208120326.png",
+    "_physics/GRE.md",
+    "data_science/courses/Generative AI with Large Language Models",
+    "data_science/courses/Untitled.md",
+    "data_science/Untitled",
+    "data_science/data_visualisation/tools/dash/Dash.md",
+    "data_science/data_visualisation/Plots.md"
+  ]
+}

@@ -1,0 +1,27 @@
+One step beyond a managed service—which handles only one part of your deployment stack for you—is a managed deployment, where the whole stack is taken care of behind the scenes. All you’ll need to make things work with one of these services is your application code or, if it’s a website you’re after, your content.
+
+## Amazon Lightsail
+
+Lightsail is promoted as a low-stress way to enter the Amazon cloud world. It offers blueprints that, when launched, will automatically provision all the compute, storage, database, and network resources needed to make your deployment work. You set the pricing level you’re after (currently that’ll cost you somewhere between $3.50 and $160 USD each month) and add an optional script that will be run on your instance at startup, and AWS will take over.
+
+## AWS Elastic Beanstalk
+- A platform-as-a-service (PaaS) that simplifies the deployment of web applications and services.
+- Automatically handles the deployment, from capacity provisioning, load balancing, and auto-scaling to application health monitoring.
+- Supports multiple programming languages and frameworks (e.g., Java, .NET, PHP, Node.js, Python).
+
+
+## Comparison of both
+
+|**Feature**|**AWS Lightsail**|**AWS Elastic Beanstalk**|
+|---|---|---|
+|**Pricing**|Flat-rate pricing starting at $3.50/month (512MB RAM).|Variable pricing based on EC2, RDS, and ElastiCache. Starts at ~$8.46/month for `t3.micro` EC2. Adding RDS and Redis increases costs significantly​<br><br>[Dragonfly Data Store](https://www.dragonflydb.io/guides/elasticache-pricing)<br><br>​<br><br>[Learn AWS](https://learnaws.io/aws-calculator/elasticache)<br><br>.|
+|**Ease of Setup**|Manual setup of Docker, Redis, PostgreSQL, and networking.|Automated deployment of Docker apps. Built-in RDS and ElastiCache support.|
+|**Scalability**|Limited scaling; requires manual provisioning.|Auto-scaling with load balancer support.|
+|**Management**|Full control; all updates, backups, and patches are manual.|Fully managed, including updates, monitoring, and scaling.|
+|**Redis Support**|Self-host Redis in a container or as a separate instance.|Use AWS ElastiCache (starts at ~$15/month for small instances)​<br><br>[Learn AWS](https://learnaws.io/aws-calculator/elasticache)<br><br>.|
+|**PostgreSQL Support**|Self-host in a container or use Lightsail-managed databases.|Use AWS RDS (starts at ~$15/month for small instances).|
+|**Monitoring**|Basic monitoring in Lightsail dashboard.|Integrated with AWS CloudWatch for detailed metrics.|
+|**Best For**|Small-scale apps with predictable usage and low complexity.|Production-grade apps needing scaling and AWS integration.|
+|**Cons**|Manual management increases maintenance burden.|Higher cost and dependency on AWS ecosystem.|
+
+---

@@ -5,7 +5,6 @@ The AWS Elastic Load Balancer (ELB) is a service that automatically distributes 
 - **Classic Load Balancer (CLB)**: An older option that operates at both Layer 4 and Layer 7, suitable for basic load balancing of HTTP/HTTPS and TCP traffic.
 - **Application Load Balancer (ALB)**: Ideal for HTTP/HTTPS traffic, it operates at the application layer (Layer 7) and supports advanced routing, SSL termination, and WebSocket support.
 - **Network Load Balancer (NLB)**: Suitable for TCP/UDP traffic, it operates at the transport layer (Layer 4) and is optimized for high performance, handling millions of requests per second while maintaining ultra-low latency.
-
 ### **Key Features**
 - **Health Checks**: ELB continuously monitors the health of registered EC2 instances, automatically routing traffic only to healthy instances. This enhances application reliability.
 - **Auto Scaling Integration**: ELB works seamlessly with Auto Scaling groups, allowing for dynamic scaling of EC2 instances based on traffic demands.

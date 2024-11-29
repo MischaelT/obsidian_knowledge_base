@@ -1,6 +1,5 @@
 Functions as a Service (FaaS) is a cloud computing model that allows developers to run individual functions or pieces of code in response to events without managing the underlying infrastructure. AWS Lambda is a prominent implementation of FaaS, enabling users to execute code automatically in response to triggers
 ### Key Features of AWS Lambda:
-
 1. **Event-Driven Execution:**
     - AWS Lambda functions are triggered by events from a variety of AWS services or custom applications. Common event sources include:
         - **API Gateway:** Handle RESTful API calls by triggering Lambda functions in response to HTTP requests.

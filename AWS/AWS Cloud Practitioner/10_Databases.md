@@ -1,5 +1,4 @@
 ## Relational database service (RDS)
-
 It is a service that allows you to run relational databases in the cloud. 
 
 Amazon RDS is a managed service that automates tasks such as hardware provisioning, database setup, patching, and backups. With these capabilities, you can spend less time completing administrative tasks and more time using data to innovate your applications. You can integrate Amazon RDS with other services to fulfill your business and operational needs, such as using AWS Lambda to query your database from a serverless application.
@@ -7,7 +6,6 @@ Amazon RDS is a managed service that automates tasks such as hardware provisioni
 Amazon #RDS provides a number of different security options. Many Amazon RDS database engines offer encryption at rest (protecting data while it is stored) and encryption in transit (protecting data while it is being sent and received).
 
 ### **Amazon RDS database engines**
-
 Amazon RDS is available on six database engines, which optimize for memory, performance, or input/output (I/O). Supported database engines include:
 
 - Amazon #Aurora
@@ -23,16 +21,12 @@ Amazon RDS is available on six database engines, which optimize for memory, perf
 Amazon Aurora helps to reduce your database costs by reducing unnecessary input/output (I/O) operations, while ensuring that your database resources remain reliable and available. 
 
 Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.
-
-
 ### Scaling Horizontally with Read Replicas
 In addition to scaling up by choosing a more powerful instance type or selecting high-IOPS storage, you can improve the performance of a database-backed application by adding additional RDS instances that perform only reads from the database. These instances are called read replicas. In a relational database, only the master database instance can write to the database. A read replica helps with performance by removing the burden of read-only queries from the master instance, freeing it up to focus on writes. Hence, read replicas provide the biggest benefit for applications that need to perform a high number of reads. Read replicas are also useful for running computationally intensive queries, such as monthly or quarterly reports that require reading and processing large amounts of data from the database.
 ### High Availability with Multi-AZ 
 Even if you use read replicas, only the master database instance can perform writes against your database. If that instance goes down, your database-backed application won’t be able to write data until it comes back online. To ensure that you always have a master database instance up and running, you can configure high availability by enabling the multi-AZ feature on your RDS instance.
 With multi-AZ enabled, RDS creates an additional instance called a standby database instance that runs in a different Availability Zone than your primary database instance. The primary instance instantly or synchronously replicates data to the secondary instance, ensuring that every time your application writes to the database, that data exists in multiple Availability Zones. If the primary fails, RDS will automatically fail over to the secondary. The failover can result in an outage of up to two minutes, so your application will experience some interruption, but you won’t lose any data. With multi-AZ enabled, you can expect your database to achieve a monthly availability of 99.95 percent. It’s important to understand that an instance outage may occur for reasons other than an Availability Zone outage. Routine maintenance tasks such as patching or upgrading the instance can result in a short outage and trigger a failover. If you use the Amazon Aurora database engine—Amazon’s proprietary database engine designed for and available exclusively with RDS—you can take advantage of additional benefits when using multi-AZ. When you use Aurora, your RDS instances are part of an Aurora cluster. All instances in the cluster use a shared storage volume that’s synchronously replicated across three different Availability Zones. Also, if your storage needs increase, the cluster volume will automatically expand up to 64 TB.
-
 ### Backup and Recovery
-
 Whether or not you use multi-AZ, RDS can take manual or automatic EBS snapshots of your instances. Snapshots are stored across multiple Availability Zones. If you ever need to restore from a snapshot, RDS will restore it to a new instance. This makes snapshots useful not only for backups but also for creating copies of a database for testing or development purposes. You can take a manual snapshot at any time. You can configure automatic snapshots to occur daily during a 30-minute backup window. RDS will retain automatic snapshots between 1 day and 35 days, with a default of 7 days. Manual snapshots are retained until you delete them. Enabling automatic snapshots also enables point-in-time recovery, a feature that saves your database change logs every 5 minutes. Combined with automated snapshots, this gives you the ability to restore a failed instance to within 5 minutes before the failure—losing no more than 5 minutes of data.
 ### Amazon RedShift
 it is a data warehouse service which allows you to analyse a high and vast amount of data. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.
@@ -81,14 +75,10 @@ Imagine you are developing a blogging platform where each user can create multip
 DynamoDB uses the primary key to distribute items across multiple partitions. Distributing the data horizontally in this fashion makes it possible for DynamoDB to consistently achieve low-latency reads and writes regardless of how many items are in a table. The number of partitions DynamoDB allocates to your table depends on the number of write capacity units (WCU) and read capacity units (RCU) you allocate to your table. The higher the transaction volume and the more data you’re reading or writing, the higher your RCU or WCU values should be. Higher values cause DynamoDB to distribute your data across more partitions, increasing performance and decreasing latency. As demand on your DynamoDB tables changes, you can change the number of RCU and WCU accordingly. Alternatively, you can configure DynamoDB Auto Scaling to dynamically adjust the number of WCU and RCU based on demand. This automatic horizontal scaling ensures consistent performance, even during times of peak load.
 #### Queries and Scans
 Recall that nonrelational databases let you quickly retrieve items from a table based on the value of the primary key. For example, if the primary key of a table is Username, you can perform a query for the user named pdrake. If an item exists with that primary key value, DynamoDB will return the item instantly. Searching for a value in an attribute other than the primary key is possible, but slower. To locate all items with a Username that starts with the letter p, you’d have to perform a scan operation to list all items in the table. This is a read-intensive task that requires scanning every item in every partition your table is stored in. Even if you know all the attributes of an item except for the primary key, you’d still have to perform a scan operation to retrieve the item.
-
-
 ### Amazon DynamoDB Accelerator
-
 [**Amazon DynamoDB Accelerator (DAX)**(opens in a new tab)](https://aws.amazon.com/dynamodb/dax/) is an in-memory cache for DynamoDB. 
 It helps improve response times from single-digit milliseconds to microseconds.
 ## RDS vs No-SQL
-
 In any time when you dont need a complex data analytics, the simple dynamoDb will make the job perfectly for you
 ## **Additional database services**
 

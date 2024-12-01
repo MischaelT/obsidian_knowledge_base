@@ -6,7 +6,7 @@ One step beyond a managed service—which handles only one part of your deployme
 - Automatically handles the deployment, from capacity provisioning, load balancing, and auto-scaling to application health monitoring.
 - Supports multiple programming languages and frameworks (e.g., Java, .NET, PHP, Node.js, Python).
 - #BeanStalk
-## Comparison 
+## Comparison
 
 | **Feature**            | **AWS Lightsail**                                             | **AWS Elastic Beanstalk**                                                                                                                                                                                                                                                                                                       |
 | ---------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -24,3 +24,43 @@ Serverless computing is a cloud computing execution model where the cloud provid
     - Developers do not need to manage server infrastructure, updates, or maintenance, leading to faster development cycles.
 5. **Scalability:**
     - Applications can automatically scale up or down in response to workload changes, making it easier to handle variable traffic.
+## AWS Well Achitected Framework
+The [**AWS Well-Architected Framework**(opens in a new tab)](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement.
+The Well-Architected Framework is based on six pillars: 
+- Operational excellence
+	 - **Focus**: Running and monitoring systems to deliver business value and continuously improving processes and procedures.
+	- **Key Practices**:
+	    - Automate operations (e.g., using AWS #CloudFormation).
+	    - Monitor health (e.g., with Amazon #CloudWatch).
+	    - Perform regular reviews and iterative improvement.
+- Security
+	- **Focus**: Protecting data, systems, and assets while maintaining compliance.
+	- **Key Practices**:
+	    - Implement strong identity controls (e.g., #IAM and #MFA).
+	    - Enable data protection (e.g., encryption with AWS #KMS).
+	    - Track and monitor security events (e.g., #CloudTrail, #GuardDuty).
+- Reliability
+	- **Focus**: Ensuring a workload performs its intended function correctly and consistently.
+	- **Key Practices**:
+	    - Design systems to withstand failures (e.g., Multi-AZ deployments).
+	    - Automate recovery from failure (e.g., Auto Scaling).
+	    - Monitor and test resiliency regularly
+- Performance efficiency
+	- **Focus**: Using IT and computing resources efficiently to meet system requirements.
+	- **Key Practices**:
+	    - Select the appropriate resource types and sizes.
+	    - Optimize over time (e.g., by using Trusted Advisor).
+	    - Use serverless architectures where possible (e.g., Lambda).
+- Cost optimization
+	- **Focus**: Managing costs effectively and avoiding unnecessary expenses.
+	- **Key Practices**:
+	    - Right-size resources.
+	    - Use Reserved Instances or Savings Plans for predictable workloads.
+	    - Leverage Spot Instances for non-critical workloads.
+	    - Turn off unused resources (e.g., AWS budgets or CloudWatch alarms).
+- Sustainability
+	- **Focus**: Minimizing environmental impact and improving energy efficiency.
+	- **Key Practices**:
+	    - Use efficient resources and serverless technologies.
+	    - Adopt multi-tenant solutions (shared resources).
+	    - Monitor and reduce waste (e.g., using the AWS Customer Carbon Footprint Tool).
